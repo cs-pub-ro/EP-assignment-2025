@@ -1,0 +1,3 @@
+[submodule "bpftune"]
+	path = bpftune
+	url = https://github.com/oracle/bpftune.git
