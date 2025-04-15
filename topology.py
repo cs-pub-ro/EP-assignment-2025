@@ -86,11 +86,11 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Mininet topology with configurable h1 and h2 links")
     parser.add_argument('--bw-h1', type=int, default=10,
                 help='Bandwidth for h1-r1 link (Mbps)')
-    parser.add_argument('--delay-h1', type=str, default='5ms',
+    parser.add_argument('--delay-h1', type=str, default='100ms',
                 help='Delay for h1-r1 link')
     parser.add_argument('--bw-h2', type=int, default=10,
                 help='Bandwidth for h2-r1 link (Mbps)')
-    parser.add_argument('--delay-h2', type=str, default='5ms',
+    parser.add_argument('--delay-h2', type=str, default='100ms',
                 help='Delay for h2-r1 link')
 
     args = parser.parse_args()
