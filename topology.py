@@ -74,6 +74,8 @@ def run(args):
     h3.cmd('ip route change default via 10.0.2.1 dev h3-eth0 initcwnd 10')
 
     r1.cmd('ip route add 10.0.2.0/24 via 10.0.3.2')
+    r1.cmd('ip route add 10.0.1.101 dev r1-eth1')
+    r1.cmd('ip route add 10.0.1.102 dev r1-eth2')
     r2.cmd('ip route add 10.0.1.0/24 via 10.0.3.1')
 
     # net.startTerms()  # Optional: can be commented out if you don't want GUI terms
